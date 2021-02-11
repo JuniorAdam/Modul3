@@ -15,10 +15,20 @@
         <!-- <counte></counte> -->
     </div>
 
+    <!-- <template id="Counter">
+        <div>
+            <label>{{ count }}</label>
+                <p>
+                    <button @click="count++">+</button>
+                    <button @click="count=0">pengulangan</button>
+                    <button @click="count--">-</button>
+        </div>
+    </template> -->
+
     <script>
 
         Vue.component('counter', 
-        {
+        {template: "#Counter",
             data : function() {
                 return {
                     count : 0
